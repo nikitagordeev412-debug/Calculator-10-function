@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../WebApplication2/WebApplication2/WebApplication2.csproj" />
+  <Project Path="API/API.csproj" Id="5a20feab-999e-4327-9a19-73e79636358c" />
   <Project Path="Leason1/Leason1.csproj" />
   <Project Path="Leason2/Leason2.csproj" />
 </Solution>
