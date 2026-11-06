@@ -9,7 +9,7 @@ namespace API.Controllers
         [HttpGet("sum")]
         public double Sum(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Sum(num1, num2);
         }
 
@@ -17,7 +17,7 @@ namespace API.Controllers
         [HttpGet("subtraction")]
         public double Subtraction(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Subtraction(num1, num2);
         }
 
@@ -25,7 +25,7 @@ namespace API.Controllers
         [HttpGet("mult")]
         public double Mult(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Mult(num1, num2);
         }
 
@@ -33,15 +33,15 @@ namespace API.Controllers
         [HttpGet("division")]
         public double Division(int num1, int num2)
         {
-            var calc = new MathOperations();
-            return calc.Division(num1, num2); // если на 0 — вернётся 0 и сообщение в консоль (как у тебя в классе)
+            var calc = new Math();
+            return calc.Division(num1, num2);
         }
 
         
         [HttpGet("power")]
         public double Power(double @base, double exponent)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Power(@base, exponent);
         }
 
@@ -49,8 +49,8 @@ namespace API.Controllers
         [HttpGet("sqrt")]
         public double Sqrt(double value)
         {
-            var calc = new MathOperations();
-            return calc.Sqrt(value); // если минус — вернётся 0 и сообщение в консоль
+            var calc = new Math();
+            return calc.Sqrt(value);
         }
 
         
