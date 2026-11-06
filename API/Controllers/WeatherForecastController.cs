@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] // будет: /api/math
+    [Route("api/[controller]")]
     public class MathController : ControllerBase
     {
         [HttpGet("sum")]
@@ -39,10 +39,10 @@ namespace API.Controllers
 
         
         [HttpGet("power")]
-        public double Power(double @base, double exponent)
+        public double Power(double num1, double num2)
         {
             var calc = new Math();
-            return calc.Power(@base, exponent);
+            return calc.Power(num1, num2);
         }
 
         
@@ -57,7 +57,7 @@ namespace API.Controllers
         [HttpGet("remainder")]
         public int Remainder(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Remainder(num1, num2);
         }
 
@@ -65,7 +65,7 @@ namespace API.Controllers
         [HttpGet("min")]
         public int Min(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Min(num1, num2);
         }
 
@@ -73,7 +73,7 @@ namespace API.Controllers
         [HttpGet("max")]
         public int Max(int num1, int num2)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Max(num1, num2);
         }
 
@@ -81,7 +81,7 @@ namespace API.Controllers
         [HttpGet("sin")]
         public double Sin(double angle)
         {
-            var calc = new MathOperations();
+            var calc = new Math();
             return calc.Sin(angle);
         }
 }
